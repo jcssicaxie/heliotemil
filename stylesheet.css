@@ -1,16 +1,253 @@
-nav ul li{
-    display: inline;
+/* BASICS */
+header {
+    background-color: #555;
+    padding-top: 1em;
+    color: black;
 }
 
-nav ul li{
-    padding: 0 20px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: grey;
 }
 
-img{
+.aboutmebody {
+    background-color: white;
+}
+
+.homebody {
+    background-color: grey;
+}
+
+footer {
+    padding: 2em;
+    font-size: small;
+    background-color: grey;
+}
+
+footer h2 p {
+    margin-left: 2em;
+}
+
+/* NAVIGATION BAR */
+nav>ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 2em;
+    background-color: white;
+    margin: 0;
+}
+
+
+nav ul li {
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 0 2em;
+}
+
+nav a {
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-color: black;
+}
+
+/* HOMEPAGE */
+.myvideo {
+    display: flex;
     max-width: 100%;
 }
 
-body{ 
-    background: grey;
-    
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-left: 1.5em;
+}
+
+h3 {
+    font-size: medium;
+}
+
+.intro {
+    color: black;
+    margin: 0;
+    padding: 3em;
+    background-color: white;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+}
+
+.content .button {
+    position: absolute;
+    top: 57em;
+    left: 72em;
+    background-color: #555;
+    color: white;
+    padding: 1em 2em;
+    cursor: pointer;
+    border-radius: 2em;
+    text-align: right;
+}
+
+.content .button:hover {
+    background-color: black;
+}
+
+/* COLLECTIONS */
+.secondmain {
+    display: auto;
+    margin-top: 0em;
+    position: relative;
+}
+
+figure {
+    margin: 0;
+    max-width: 100%;
+}
+
+.secondmain h2, main h2 {
+    display: block;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    margin: 0;
+    padding: 2em;
+    background-color: white;
+}
+
+/* item 1 */
+.item1 figure {
+    display: flex;
+}
+
+.item1-text {
+    margin: 0;
+    padding: 2em;
+    justify-content: center;
+}
+
+.myvideo-collection {
+    max-width: 50%;
+    margin: 0;
+}
+
+/* item 2 */
+.item2 {
+    display: flex;
+    background-color: white;
+}
+
+.item2-fig {
+    flex: 1;
+}
+
+.item2-text {
+    flex: 1;
+    padding: 2em;
+}
+
+.myvideo-collection2 {
+    display: flex;
+    max-width: 100%;
+    margin: 0;
+}
+
+.item-text {
+    padding: 2em;
+}
+
+img {
+    max-width: 100%;
+    display: flex;
+}
+
+.endcollection, .endhome {
+    display: flex;
+}
+
+.endcollection img, .endhome img {
+    width: 50%;
+}
+
+.endcollection .myvideo-end {
+    width: 50%;
+}
+
+/* FAVOURITE INSPO slider based off of https://www.youtube.com/watch?v=McPdzhLRzCg */
+.container {
+    padding: 0;
+}
+
+.slider-wrapper {
+    position: relative;
+    margin: 0;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slider img {
+    flex: auto;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 2em;
+    position: absolute;
+    bottom: 4em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-nav a {
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.75;
+    transition: opacity 250ms ease;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+/* ABOUT ME */
+.myvideo-aboutme {
+    max-width: 50%;
+}
+
+.aboutme-text {
+    padding: 3em;
+    padding-bottom: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.flex h2, 
+.flex h3 {
+    margin: 0;
 }
