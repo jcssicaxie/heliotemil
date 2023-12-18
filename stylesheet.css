@@ -107,7 +107,7 @@ h3 {
 
 /* COLLECTIONS */
 .secondmain {
-    display: auto;
+    display: flex;
     margin-top: 0em;
     position: relative;
 }
@@ -145,8 +145,11 @@ figure {
 
 /* item 2 */
 .item2 {
-    display: flex;
     background-color: white;
+}
+
+.flexcollection{
+    display: flex;
 }
 
 .item2-fig {
