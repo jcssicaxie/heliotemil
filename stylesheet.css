@@ -90,6 +90,7 @@ h3 {
 }
 
 .content .button {
+    display: flex;
     position: absolute;
     top: 57em;
     left: 72em;
