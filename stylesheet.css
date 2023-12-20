@@ -179,13 +179,11 @@ img {
     display: flex;
 }
 
-.endcollection img, .endhome img {
+.endcollection img, .endhome img,
+.endcollection .myvideo-end  {
     width: 50%;
 }
 
-.endcollection .myvideo-end {
-    width: 50%;
-}
 
 /* FAVOURITE INSPO slider based off of https://www.youtube.com/watch?v=McPdzhLRzCg */
 .container {
@@ -216,8 +214,7 @@ img {
     column-gap: 2em;
     position: absolute;
     bottom: 4em;
-    left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(90%);
 }
 
 .slider-nav a {
